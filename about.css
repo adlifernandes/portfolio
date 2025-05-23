@@ -1,0 +1,52 @@
+.about-hero {
+  padding: 120px 20px 60px;
+  background: linear-gradient(to bottom, rgba(15,32,39,0.9), rgba(44,62,80,0.95)), url('about-bg.jpeg') center center / cover no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+}
+
+.about-hero h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.about-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.about-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.about-info li strong {
+  color: #00ADB5;
+}

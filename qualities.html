@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Qualities | Adli Mustaqim</title>
+    <style>
+        :root {
+            --primary: #2C3E50;    /* Dark blue */
+            --secondary: #3498DB;  /* Bright blue */
+            --accent: #F39C12;     /* Gold for highlights */
+            --text: #333333;       /* Dark gray */
+            --light: #ECF0F1;      /* Light gray */
+            --bg: #FFFFFF;         /* White background */
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background:url(bg7.png) center center / cover no-repeat ;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Header (consistent with other pages) */
+        header {
+            background: var(--primary);
+            color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--secondary);
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+
+        /* Qualities Hero Section */
+        .qualities-hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--light);
+        }
+
+        .qualities-hero h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .qualities-hero p {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Qualities Grid */
+        .qualities-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .qualities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .quality-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+
+        .quality-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .quality-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .quality-card p {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .quality-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .qualities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .qualities-hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Adli Mustaqim</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="academic.html">Academic</a></li>
+                    <li><a href="qualities.html" class="active">Qualities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="qualities-hero">
+            <div class="container">
+                <h1>My Personal Qualities</h1>
+                <p>These are the core attributes that define my character and approach to work and life.</p>
+            </div>
+        </section>
+
+        <section class="qualities-container">
+            <div class="qualities-grid">
+                <!-- Quality 1 -->
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Creative Problem-Solving</h3>
+                    <p>I approach challenges with innovative thinking and unconventional solutions, blending technical knowledge with artistic vision.</p>
+                    <p><strong>Example:</strong> Designed an interactive game mechanic that increased user engagement by 40%.</p>
+                </div>
+
+                <!-- Quality 2 -->
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborative Spirit</h3>
+                    <p>I thrive in team environments, valuing diverse perspectives and fostering open communication to achieve shared goals.</p>
+                    <p><strong>Example:</strong> Led a cross-functional team to deliver a multimedia project 2 weeks ahead of schedule.</p>
+                </div>
+
+                <!-- Quality 3 -->
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Adaptability</h3>
+                    <p>I quickly adjust to new technologies and changing requirements, maintaining productivity in dynamic environments.</p>
+                    <p><strong>Example:</strong> Mastered three new design tools within a month to meet project demands.</p>
+                </div>
+
+                <!-- Quality 4 -->
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Continuous Learner</h3>
+                    <p>I maintain a growth mindset, constantly seeking to expand my skillset through courses, projects, and mentorship.</p>
+                    <p><strong>Example:</strong> Completed 200+ hours of online courses in game design and development last year.</p>
+                </div>
+
+                <!-- Quality 5 -->
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Empathy</h3>
+                    <p>I design with the end-user in mind, ensuring accessibility and intuitive experiences for diverse audiences.</p>
+                    <p><strong>Example:</strong> Redesigned a mobile interface that improved usability for visually impaired users.</p>
+                </div>
+
+                <!-- Quality 6 -->
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>Perseverance</h3>
+                    <p>I persist through challenges, viewing obstacles as opportunities to innovate and improve.</p>
+                    <p><strong>Example:</strong> Debugged a complex game physics issue over 3 days to meet launch deadline.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="tt.gif" alt="TikTok"></a>
+            <a href="#"><img src="ig.gif" alt="Instagram"></a>
+            <a href="#"><img src="fb.gif" alt="Facebook"></a>
+        </div>
+        <p>Email: <a href="mailto:adlimustaqim34@gmail.com">adlimustaqim34@gmail.com</a></p>
+        <p>© 2023 Adli Mustaqim. All rights reserved.</p>
+    </footer>
+</body>
+</html>
